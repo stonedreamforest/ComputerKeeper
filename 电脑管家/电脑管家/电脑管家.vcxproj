@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92D851F7-53D7-4E23-9414-4E4B6E07B669}</ProjectGuid>
+    <RootNamespace>电脑管家</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssignKill.h" />
+    <ClInclude Include="CleanSpace.h" />
+    <ClInclude Include="HomePage.h" />
+    <ClInclude Include="ImageButton.h" />
+    <ClInclude Include="ListButton.h" />
+    <ClInclude Include="ListCtrl.h" />
+    <ClInclude Include="Md5.h" />
+    <ClInclude Include="MemoryOptimizer.h" />
+    <ClInclude Include="MyListBox.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServiceManagement.h" />
+    <ClInclude Include="shockwaveflash1.h" />
+    <ClInclude Include="StartupManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabControl.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UninstallTool.h" />
+    <ClInclude Include="VirusScanner.h" />
+    <ClInclude Include="电脑管家.h" />
+    <ClInclude Include="电脑管家Dlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssignKill.cpp" />
+    <ClCompile Include="CleanSpace.cpp" />
+    <ClCompile Include="HomePage.cpp" />
+    <ClCompile Include="ImageButton.cpp" />
+    <ClCompile Include="ListButton.cpp" />
+    <ClCompile Include="ListCtrl.cpp" />
+    <ClCompile Include="Md5.cpp" />
+    <ClCompile Include="MemoryOptimizer.cpp" />
+    <ClCompile Include="MyListBox.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="ServiceManagement.cpp" />
+    <ClCompile Include="shockwaveflash1.cpp" />
+    <ClCompile Include="StartupManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabControl.cpp" />
+    <ClCompile Include="UninstallTool.cpp" />
+    <ClCompile Include="VirusScanner.cpp" />
+    <ClCompile Include="电脑管家.cpp" />
+    <ClCompile Include="电脑管家Dlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="电脑管家.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NODROP.cur" />
+    <None Include="res\My.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Desktop\005.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\1-1.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\1-2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\222.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\222.png" />
+    <Image Include="..\..\..\..\..\desktop\bitmap1.bmp" />
+    <Image Include="..\..\..\..\..\desktop\bitmap7.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\CleanSpace.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\CleanSpace.ico" />
+    <Image Include="..\..\..\..\..\Desktop\homepage.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\homepage.ico" />
+    <Image Include="..\..\..\..\..\Desktop\lijifenxi.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\QQ截图20151109114303.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\quanmiantijian.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\saomiaolaji.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\ServiceManagement.ico" />
+    <Image Include="..\..\..\..\..\Desktop\StartupManager.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\StartupManager.ico" />
+    <Image Include="..\..\..\..\..\Desktop\UninstallTool.ico" />
+    <Image Include="..\..\..\..\..\Desktop\VirusScanner.ico" />
+    <Image Include="..\..\..\..\..\Desktop\yijiansaomiao.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\一直切换图片\e61190ef76c6a7ef844fdf3afdfaaf51f3de6644.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\一直切换图片\s12.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\全面体检D.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\全面体检h.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_204684_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_204903_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_204906_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_2325167_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_232567_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_31920_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\noun_8312_cc.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\云.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\关机.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\内存优化.ico" />
+    <Image Include="..\..\..\..\..\Desktop\图标\内存清理\闪电杀毒h_meitu_1.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\内存清理\闪电杀毒h_meitu_1_meitu_2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\内存清理\闪电杀毒h_meitu_1_meitu_3.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\新建文件夹\返回_meitu_1.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\新建文件夹\返回_meitu_1_meitu_2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\新建文件夹\返回_meitu_1_meitu_3.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\显示.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\菜单.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\菜单1.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\菜单2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图标\邮件.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\21.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\37a383974f0ff47681ebddb585aeccb9.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\7681ebddb585aeccb9.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\ooYBAFHbjqaIU5RvAAuU7swk5u0AAAvDgG6JDMAC5UG775.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\一键扫描d.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\一键扫描h.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\切换\18723_385938_632992.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\切换\启动项.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\切换\指定.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\扫描垃圾d.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\扫描垃圾h.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\扫描垃圾背景.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\杀毒\全盘杀毒1.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\杀毒\全盘杀毒2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\杀毒\全盘杀毒3.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\杀毒\指定位置1.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\杀毒\指定位置2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\杀毒\指定位置3.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\电脑加速.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\立即清理.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\立即清理_meitu_2.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\立即清理_meitu_3.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\闪电杀毒1d.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\闪电杀毒1h.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\闪电杀毒2d.bmp" />
+    <Image Include="..\..\..\..\..\Desktop\图片\闪电杀毒2h.bmp" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\电脑管家.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="电脑管家.rc" _x007B_D27CDB6E-AE6D-11CF-96B8-444553540000_x007D_="CShockwaveflash1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

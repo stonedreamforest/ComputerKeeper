@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "电脑管家", "电脑管家\电脑管家.vcxproj", "{92D851F7-53D7-4E23-9414-4E4B6E07B669}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCApplication1", "MFCApplication1\MFCApplication1.vcxproj", "{DBC60DCC-E67D-4976-9E8C-01A4BE719826}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "注册", "注册\注册.vcxproj", "{BD25C6BE-446B-4820-B628-087762CD8FDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D851F7-53D7-4E23-9414-4E4B6E07B669}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92D851F7-53D7-4E23-9414-4E4B6E07B669}.Debug|Win32.Build.0 = Debug|Win32
+		{92D851F7-53D7-4E23-9414-4E4B6E07B669}.Release|Win32.ActiveCfg = Release|Win32
+		{92D851F7-53D7-4E23-9414-4E4B6E07B669}.Release|Win32.Build.0 = Release|Win32
+		{DBC60DCC-E67D-4976-9E8C-01A4BE719826}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBC60DCC-E67D-4976-9E8C-01A4BE719826}.Debug|Win32.Build.0 = Debug|Win32
+		{DBC60DCC-E67D-4976-9E8C-01A4BE719826}.Release|Win32.ActiveCfg = Release|Win32
+		{DBC60DCC-E67D-4976-9E8C-01A4BE719826}.Release|Win32.Build.0 = Release|Win32
+		{BD25C6BE-446B-4820-B628-087762CD8FDA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD25C6BE-446B-4820-B628-087762CD8FDA}.Debug|Win32.Build.0 = Debug|Win32
+		{BD25C6BE-446B-4820-B628-087762CD8FDA}.Release|Win32.ActiveCfg = Release|Win32
+		{BD25C6BE-446B-4820-B628-087762CD8FDA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
